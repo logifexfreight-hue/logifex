@@ -51,6 +51,43 @@ export default async function Footer() {
               </svg>
             </a>
           </div>
+
+          {/* Certificates in Footer */}
+          <div className="mt-8 pt-6 border-t border-neutral-700/60 max-w-sm">
+            <h4 className="font-label-bold text-xs uppercase tracking-wider text-surface-bright mb-3">
+              Certificates
+            </h4>
+            <div className="flex flex-wrap items-center gap-4 sm:gap-5">
+              <Link href="/about" className="group" title="ISO 14001:2015">
+                <img
+                  src="/images/certificates/footer/iso-1-white.png"
+                  alt="ISO 14001:2015"
+                  className="h-10 w-auto opacity-75 group-hover:opacity-100 transition-opacity"
+                />
+              </Link>
+              <Link href="/about" className="group" title="ISO 28000:2022">
+                <img
+                  src="/images/certificates/footer/iso-2-white.png"
+                  alt="ISO 28000:2022"
+                  className="h-10 w-auto opacity-75 group-hover:opacity-100 transition-opacity"
+                />
+              </Link>
+              <Link href="/about" className="group" title="ISO 45001:2018">
+                <img
+                  src="/images/certificates/footer/iso-3-white.png"
+                  alt="ISO 45001:2018"
+                  className="h-10 w-auto opacity-75 group-hover:opacity-100 transition-opacity"
+                />
+              </Link>
+              <Link href="/about" className="group" title="ISO 9001:2015">
+                <img
+                  src="/images/certificates/footer/iso-4-white.png"
+                  alt="ISO 9001:2015"
+                  className="h-10 w-auto opacity-75 group-hover:opacity-100 transition-opacity"
+                />
+              </Link>
+            </div>
+          </div>
         </div>
 
         <div>
