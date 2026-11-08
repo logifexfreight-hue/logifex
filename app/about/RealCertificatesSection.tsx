@@ -55,9 +55,9 @@ export default function RealCertificatesSection() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         
         {/* Header */}
-        <div className="mb-12 md:mb-16">
+        <div className="mb-8 md:mb-10">
           <div className="max-w-2xl text-left">
-            <h2 className="font-headline-display text-3xl sm:text-5xl md:text-7xl text-on-background font-black uppercase tracking-tight leading-none">
+            <h2 className="font-headline-display text-2xl sm:text-4xl md:text-5xl text-on-background font-black uppercase tracking-tight leading-none">
               Certificates
             </h2>
           </div>
@@ -65,36 +65,36 @@ export default function RealCertificatesSection() {
 
         {/* Carousel Container */}
         <div className="relative group">
-          {/* Navigation Controls */}
+          {/* Navigation Controls (Mobile only) */}
           <button
             onClick={() => scroll("left")}
-            className="absolute left-2 md:-left-6 top-1/2 -translate-y-1/2 z-40 w-12 h-12 rounded-2xl border border-secondary-container bg-white text-on-surface flex items-center justify-center shadow-lg hover:bg-surface-container-low transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 focus:opacity-100"
+            className="md:hidden absolute left-2 top-1/2 -translate-y-1/2 z-40 w-10 h-10 rounded-xl border border-secondary-container bg-white text-on-surface flex items-center justify-center shadow-lg hover:bg-surface-container-low transition-all"
             aria-label="Scroll left"
           >
-            <span className="material-symbols-outlined">arrow_back</span>
+            <span className="material-symbols-outlined text-xl">arrow_back</span>
           </button>
           <button
             onClick={() => scroll("right")}
-            className="absolute right-2 md:-right-6 top-1/2 -translate-y-1/2 z-40 w-12 h-12 rounded-2xl border border-secondary-container bg-white text-on-surface flex items-center justify-center shadow-lg hover:bg-surface-container-low transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 focus:opacity-100"
+            className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 z-40 w-10 h-10 rounded-xl border border-secondary-container bg-white text-on-surface flex items-center justify-center shadow-lg hover:bg-surface-container-low transition-all"
             aria-label="Scroll right"
           >
-            <span className="material-symbols-outlined">arrow_forward</span>
+            <span className="material-symbols-outlined text-xl">arrow_forward</span>
           </button>
 
           {/* Sliding Carousel Track */}
           <div
             ref={scrollRef}
-            className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none pb-6"
+            className="flex gap-4 sm:gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none pb-4"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
           {certificates.map((cert) => (
             <div
               key={cert.id}
               onClick={() => setActiveImage(cert.image)}
-              className="flex-shrink-0 w-[220px] sm:w-[260px] snap-start group cursor-zoom-in"
+              className="flex-shrink-0 w-[170px] sm:w-[200px] snap-start group cursor-zoom-in"
             >
               {/* Image Box */}
-              <div className="relative rounded-2xl overflow-hidden border border-secondary-container bg-white aspect-[3/4] shadow-sm group-hover:shadow-md transition-all duration-300 flex items-center justify-center p-4">
+              <div className="relative rounded-xl overflow-hidden border border-secondary-container bg-white aspect-[3/4] shadow-sm group-hover:shadow-md transition-all duration-300 flex items-center justify-center p-3">
                 <img
                   src={cert.image}
                   alt={cert.title}

@@ -115,7 +115,7 @@ export default async function Footer() {
                 className="hover:text-primary-fixed-dim transition-colors"
                 href="/contact#uae"
               >
-                {getVal("uae_address", "UAE HQ: +971 45752307")}
+                {getVal("uae_address", "UAE HQ: +971 2868694")}
               </Link>
             </li>
             <li>

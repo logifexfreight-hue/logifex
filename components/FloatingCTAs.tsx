@@ -7,7 +7,7 @@ export default function FloatingCTAs() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
       {/* Call Button */}
       <a
-        href="tel:+97145752307"
+        href="tel:+9712868694"
         className="flex items-center justify-center w-14 h-14 bg-primary text-white rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300 group relative"
         aria-label="Call Us"
       >

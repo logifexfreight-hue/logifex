@@ -9,6 +9,15 @@ export const metadata: Metadata = {
   title: "Logifex Freight Services - Precision in Motion",
   description:
     "Trusted global freight forwarder offering tailored solutions in Air, Sea, Road, Rail, and Multimodal logistics across the UAE, India, UK, and worldwide.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-icon.png" },
+    ],
+  },
 };
 
 export default function RootLayout({

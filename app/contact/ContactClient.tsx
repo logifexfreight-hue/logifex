@@ -78,13 +78,12 @@ export default function ContactClient({ content }: { content: any[] }) {
             </div>
             <div>
               <h3 className="font-headline-md text-lg font-bold text-on-background">
-                Logifex Air & Sea Cargo Services LLC
+                Logifex Air And Sea Cargo Services LLC
               </h3>
               <p className="text-xs text-secondary mt-1 whitespace-pre-wrap">
-                UAE (Dubai) Office Address{"\n"}
-                GSuit 117/32, First Floor, Shaikha Mhara Building{"\n"}
-                171 Al Nahda St, Al Qusais 2 - Dubai, UAE{"\n"}
-                P.O Box : 237951
+                504, 5th Floor{"\n"}
+                Al Rafa Building, Burdubai,{"\n"}
+                Dubai, UAE.
               </p>
             </div>
             <div className="space-y-2 text-xs text-on-surface pt-2">
@@ -92,9 +91,15 @@ export default function ContactClient({ content }: { content: any[] }) {
                 <span className="material-symbols-outlined text-primary text-sm">
                   call
                 </span>
-                <a href="tel:+97145752307" className="hover:underline font-bold">
-                  +971 45752307
-                </a>
+                <div className="flex flex-col sm:flex-row sm:gap-2">
+                  <a href="tel:+9712868694" className="hover:underline font-bold">
+                    +971 2868694
+                  </a>
+                  <span className="hidden sm:inline text-secondary">|</span>
+                  <a href="tel:+9718244772" className="hover:underline font-bold">
+                    +971 8244772
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary text-sm">
@@ -369,7 +374,7 @@ export default function ContactClient({ content }: { content: any[] }) {
             </p>
             <div className="p-3 bg-white rounded-lg border border-secondary-container text-xs font-mono font-bold text-primary flex items-center justify-between">
               <span>24/7 Hotline:</span>
-              <span>+971 45752307</span>
+              <span>+971 2868694</span>
             </div>
           </div>
 

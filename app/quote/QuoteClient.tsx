@@ -85,10 +85,10 @@ export default function QuoteClient({ content }: { content: any[] }) {
             <div className="flex flex-col gap-2.5 text-sm font-medium">
               <a
                 className="flex items-center gap-2 text-primary hover:text-primary-container transition-colors"
-                href="tel:+97145752307"
+                href="tel:+9712868694"
               >
                 <span className="material-symbols-outlined text-base">call</span>
-                UAE: +971 45752307
+                UAE: +971 2868694 / +971 8244772
               </a>
               <a
                 className="flex items-center gap-2 text-primary hover:text-primary-container transition-colors"
