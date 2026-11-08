@@ -4,7 +4,6 @@ import AnimatedParagraphs from "./AnimatedParagraphs";
 import AnimatedPrinciples from "./AnimatedPrinciples";
 import IndustriesSection from "./IndustriesSection";
 import CertificatesSection from "./CertificatesSection";
-import RealCertificatesSection from "./RealCertificatesSection";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
@@ -88,14 +87,9 @@ export default async function AboutPage() {
         {/* Industries We Serve */}
         <IndustriesSection industries={industries || []} />
 
-        {/* Certificates & Accreditations (Now Memberships) */}
+        {/* Certificates & Accreditations (Memberships) */}
         <div className="!mt-12 md:!mt-16">
           <CertificatesSection />
-        </div>
-
-        {/* Real Certificates */}
-        <div className="!mt-12 md:!mt-16">
-          <RealCertificatesSection />
         </div>
 
         {/* CTA Banner */}
